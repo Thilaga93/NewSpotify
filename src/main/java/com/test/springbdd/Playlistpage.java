@@ -21,7 +21,7 @@ public class Playlistpage extends Base{
 
 
 
-	@FindBy(xpath="//div[@aria-labelledby='listrow-title-spotify:playlist:4QT2AuN3c10XLRgXXiGPKP']")
+	@FindBy(xpath="//div[@aria-labelledby='listrow-title-spotify:playlist:6hzaVcNtcCUR9LA47yE4Me']")
 	WebElement playlistname; //specific to Gaana2 now..other ones are not working has to be changed	
 	@FindBy(xpath="//div[@class='YAYCVnYpPvmYV4JyTmn5']//input[@role='searchbox']")
 	WebElement searchbox;		
