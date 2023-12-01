@@ -1,0 +1,26 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAUAMQVRBWTFIXTLQG
+      secret-key: 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
+      
+    region:
+      static: us-east-2
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: s3-storage-classes-demos-thiagam-2023
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+server:
+  port: 9090
