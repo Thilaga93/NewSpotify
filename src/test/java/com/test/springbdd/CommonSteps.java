@@ -5,10 +5,11 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.test.springbdd.Entity.Spotify;
+import com.test.springbdd.Service.SpotifyServiceImpl;
 import com.test.springbdd.Util.ScreenshotUtil;
 import com.test.springbdd.config.Base;
 import com.test.springbdd.config.InterceptableSceanario;
-import com.test.springbdd.config.Sample;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -27,8 +28,9 @@ public class CommonSteps{
 	InterceptableSceanario scenario;
 	@Autowired
 	ScreenshotUtil takescreenshot;
-@Autowired
-Sample ob;
+	@Autowired 
+	SpotifyServiceImpl db;
+
 
 
 	@Given("click on {string} link")
@@ -55,14 +57,17 @@ Sample ob;
 	{
 		System.out.println(songs);
 		System.out.println("the song is"+songs.get(0).get("Song"));
-		
+
 		playlistpage.addsongtoplaylist(songs.get(0).get("Song")); 
-		
+
 		takescreenshot.takescreeshot();
 	}
 	@Then("display message")
 	public void display()
 	{
+		Spotify obj=new Spotify("Marana Mass","Anirudh","SUPERHIT");
+				db.save(obj);
+		System.out.println(obj);
 		System.out.println("Success");
 	}
 
@@ -80,8 +85,8 @@ Sample ob;
 		base.testcontext().set(processedstring, topresult);
 		System.out.println(topresult);
 		takescreenshot.takescreeshot();
-		
-		}
+
+	}
 
 	@Then ("search for the song with keyword {string} and validate the result")
 	public void validatesearchresults(String str)
@@ -91,6 +96,6 @@ Sample ob;
 		System.out.println("The achieved result is" +base.testcontext().get(processedstring) );
 		//playlistpage.checkforbrokenlinks();
 		takescreenshot.takescreeshot();
-		
+
 	}
 }

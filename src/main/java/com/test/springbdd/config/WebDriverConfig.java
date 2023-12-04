@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
@@ -16,7 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class WebDriverConfig {
 	
 	
-	//@ConditionalOnProperty(value = "browser", havingValue = "chrome") 
+	@ConditionalOnProperty(value = "browser", havingValue = "chrome") 
 	@Bean
 	@Scope("browserscope")
 	public  WebDriver getdriver()
@@ -27,7 +28,9 @@ public class WebDriverConfig {
 		
 	}
 	
-	//@ConditionalOnProperty(value = "browser", havingValue = "firefox") 
+	@ConditionalOnProperty(value = "browser", havingValue = "firefox") 
+	@Bean
+	@Scope("browserscope")
 	public  WebDriver getdriver2()
 	{		
 		System.out.println("Firefox  bean created");
