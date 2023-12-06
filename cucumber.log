@@ -1,24 +1,312 @@
-2023-12-04 13:46:09.886  INFO 26628 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 26628 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
-2023-12-04 13:46:09.891  INFO 26628 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
-2023-12-04 13:46:10.862  INFO 26628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-04 13:46:10.906  INFO 26628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 JPA repository interfaces.
-2023-12-04 13:46:11.293  INFO 26628 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-12-04 13:46:11.650  INFO 26628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-04 13:46:12.216  INFO 26628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-04 13:46:12.294  INFO 26628 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-04 13:46:12.430  INFO 26628 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
-2023-12-04 13:46:12.621  INFO 26628 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2023-12-04 13:46:12.731  INFO 26628 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-12-04 13:46:13.247  INFO 26628 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-04 13:46:13.255  INFO 26628 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04 13:46:14.778  INFO 26628 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
-2023-12-04 13:46:14.806  INFO 26628 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
-2023-12-04 13:46:15.903  INFO 26628 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
-2023-12-04 13:46:16.242  WARN 26628 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-04 13:46:16.546  INFO 26628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-12-04 13:46:16.984  INFO 26628 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 7.493 seconds (JVM running for 9.231)
-2023-12-04 13:46:27.477  INFO 26628 --- [main] com.test.springbdd.CommonSteps           : Logger
-2023-12-04 13:46:37.162  INFO 26628 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-12-04 13:46:37.162  INFO 26628 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04 13:46:37.169  INFO 26628 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-04 13:46:37.180  INFO 26628 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 09:57:48.183  INFO 2468 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 2468 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 09:57:48.191  INFO 2468 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 09:57:48.667  INFO 2468 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 09:57:48.690  INFO 2468 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2023-12-06 09:57:48.972  INFO 2468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 09:57:49.194  INFO 2468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 09:57:49.565  INFO 2468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 09:57:49.618  INFO 2468 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 09:57:49.682  INFO 2468 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 09:57:49.828  INFO 2468 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 09:57:49.948  INFO 2468 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 09:57:50.412  INFO 2468 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 09:57:50.418  INFO 2468 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 09:57:51.224  INFO 2468 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 09:57:51.253  INFO 2468 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 09:57:52.389  INFO 2468 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 09:57:52.666  WARN 2468 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 09:57:52.869  INFO 2468 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 09:57:53.208  INFO 2468 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 5.366 seconds (JVM running for 6.742)
+2023-12-06 09:58:04.030  INFO 2468 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 09:58:08.582  INFO 2468 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 09:58:08.583  INFO 2468 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 09:58:08.585  INFO 2468 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 09:58:08.592  INFO 2468 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 10:04:57.981  INFO 24336 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 24336 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 10:04:57.983  INFO 24336 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 10:04:58.541  INFO 24336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 10:04:58.576  INFO 24336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 JPA repository interfaces.
+2023-12-06 10:04:58.915  INFO 24336 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 10:04:59.142  INFO 24336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 10:04:59.491  INFO 24336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 10:04:59.547  INFO 24336 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 10:04:59.613  INFO 24336 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 10:04:59.756  INFO 24336 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 10:04:59.882  INFO 24336 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 10:05:00.314  INFO 24336 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 10:05:00.320  INFO 24336 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:05:00.602  INFO 24336 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 10:05:00.627  INFO 24336 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 10:05:01.465  INFO 24336 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 10:05:01.719  WARN 24336 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 10:05:01.943  INFO 24336 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:05:02.282  INFO 24336 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 4.55 seconds (JVM running for 5.731)
+2023-12-06 10:05:19.410  INFO 24336 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 10:05:24.225  INFO 24336 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:05:24.226  INFO 24336 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:05:24.228  INFO 24336 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 10:05:24.237  INFO 24336 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 10:24:15.932  INFO 30504 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 30504 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 10:24:15.934  INFO 30504 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 10:24:16.506  INFO 30504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 10:24:16.533  INFO 30504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2023-12-06 10:24:16.905  INFO 30504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 10:24:17.168  INFO 30504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 10:24:17.574  INFO 30504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 10:24:17.653  INFO 30504 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 10:24:17.754  INFO 30504 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 10:24:17.918  INFO 30504 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 10:24:18.048  INFO 30504 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 10:24:18.500  INFO 30504 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 10:24:18.506  INFO 30504 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:24:18.808  INFO 30504 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 10:24:18.841  INFO 30504 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 10:24:19.738  INFO 30504 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 10:24:20.083  WARN 30504 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 10:24:20.370  INFO 30504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:24:20.794  INFO 30504 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 5.129 seconds (JVM running for 6.39)
+2023-12-06 10:24:33.009  INFO 30504 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 10:24:37.589  INFO 30504 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:24:37.590  INFO 30504 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:24:37.593  INFO 30504 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 10:24:37.602  INFO 30504 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 10:47:07.388  INFO 31632 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 31632 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 10:47:07.390  INFO 31632 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 10:47:08.002  INFO 31632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 10:47:08.033  INFO 31632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2023-12-06 10:47:08.403  INFO 31632 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 10:47:08.660  INFO 31632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 10:47:09.023  INFO 31632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 10:47:09.085  INFO 31632 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 10:47:09.181  INFO 31632 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 10:47:09.357  INFO 31632 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 10:47:09.489  INFO 31632 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 10:47:09.949  INFO 31632 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 10:47:09.955  INFO 31632 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:47:10.265  INFO 31632 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 10:47:10.301  INFO 31632 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 10:47:11.152  INFO 31632 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 10:47:11.446  WARN 31632 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 10:47:11.692  INFO 31632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:47:12.070  INFO 31632 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 4.97 seconds (JVM running for 6.196)
+2023-12-06 10:47:27.934  INFO 31632 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 10:47:32.620  INFO 31632 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:47:32.621  INFO 31632 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:47:32.623  INFO 31632 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 10:47:32.632  INFO 31632 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 10:51:10.508  INFO 24664 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 24664 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 10:51:10.509  INFO 24664 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 10:51:11.033  INFO 24664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 10:51:11.059  INFO 24664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2023-12-06 10:51:11.404  INFO 24664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 10:51:11.678  INFO 24664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 10:51:12.054  INFO 24664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 10:51:12.120  INFO 24664 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 10:51:12.222  INFO 24664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 10:51:12.414  INFO 24664 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 10:51:12.556  INFO 24664 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 10:51:13.071  INFO 24664 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 10:51:13.079  INFO 24664 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:51:13.416  INFO 24664 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 10:51:13.451  INFO 24664 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 10:51:14.409  INFO 24664 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 10:51:14.673  WARN 24664 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 10:51:14.939  INFO 24664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:51:15.337  INFO 24664 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 5.115 seconds (JVM running for 6.257)
+2023-12-06 10:51:33.510  INFO 24664 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 10:51:37.928  INFO 24664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:51:37.929  INFO 24664 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:51:37.931  INFO 24664 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 10:51:37.942  INFO 24664 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 10:52:07.021  INFO 22724 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 22724 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 10:52:07.022  INFO 22724 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 10:52:07.643  INFO 22724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 10:52:07.671  INFO 22724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2023-12-06 10:52:07.985  INFO 22724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 10:52:08.265  INFO 22724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 10:52:08.673  INFO 22724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 10:52:08.743  INFO 22724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 10:52:08.850  INFO 22724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 10:52:08.995  INFO 22724 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 10:52:09.111  INFO 22724 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 10:52:09.572  INFO 22724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 10:52:09.579  INFO 22724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:52:09.894  INFO 22724 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 10:52:09.923  INFO 22724 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 10:52:10.776  INFO 22724 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 10:52:11.099  WARN 22724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 10:52:11.365  INFO 22724 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:52:11.770  INFO 22724 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 4.99 seconds (JVM running for 6.226)
+2023-12-06 10:52:24.823  INFO 22724 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 10:52:27.844  INFO 22724 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:52:27.845  INFO 22724 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:52:27.848  INFO 22724 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 10:52:27.859  INFO 22724 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 10:53:35.690  INFO 2160 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 2160 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 10:53:35.692  INFO 2160 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 10:53:36.385  INFO 2160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 10:53:36.421  INFO 2160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 JPA repository interfaces.
+2023-12-06 10:53:36.819  INFO 2160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 10:53:37.095  INFO 2160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 10:53:37.519  INFO 2160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 10:53:37.587  INFO 2160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 10:53:37.681  INFO 2160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 10:53:37.862  INFO 2160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 10:53:38.011  INFO 2160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 10:53:38.453  INFO 2160 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 10:53:38.460  INFO 2160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:53:38.767  INFO 2160 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 10:53:38.804  INFO 2160 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 10:53:39.698  INFO 2160 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 10:53:40.090  WARN 2160 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 10:53:40.424  INFO 2160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:53:40.885  INFO 2160 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 5.499 seconds (JVM running for 6.857)
+2023-12-06 10:53:52.347  INFO 2160 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 10:54:01.335  INFO 2160 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:54:01.336  INFO 2160 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:54:01.338  INFO 2160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 10:54:01.348  INFO 2160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 10:54:53.450  INFO 11848 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 11848 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 10:54:53.452  INFO 11848 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 10:54:54.066  INFO 11848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 10:54:54.098  INFO 11848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
+2023-12-06 10:54:54.456  INFO 11848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 10:54:54.739  INFO 11848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 10:54:55.118  INFO 11848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 10:54:55.184  INFO 11848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 10:54:55.304  INFO 11848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 10:54:55.438  INFO 11848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 10:54:55.531  INFO 11848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 10:54:56.013  INFO 11848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 10:54:56.018  INFO 11848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:54:56.334  INFO 11848 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 10:54:56.364  INFO 11848 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 10:54:57.227  INFO 11848 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 10:54:57.549  WARN 11848 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 10:54:57.804  INFO 11848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:54:58.221  INFO 11848 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 5.052 seconds (JVM running for 6.315)
+2023-12-06 10:55:09.911  INFO 11848 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 10:55:14.539  INFO 11848 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:55:14.541  INFO 11848 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:55:14.543  INFO 11848 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 10:55:14.554  INFO 11848 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 10:59:12.001  INFO 8776 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 8776 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 10:59:12.002  INFO 8776 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 10:59:12.562  INFO 8776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 10:59:12.591  INFO 8776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+2023-12-06 10:59:12.969  INFO 8776 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 10:59:13.246  INFO 8776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 10:59:13.636  INFO 8776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 10:59:13.700  INFO 8776 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 10:59:13.789  INFO 8776 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 10:59:13.968  INFO 8776 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 10:59:14.113  INFO 8776 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 10:59:14.583  INFO 8776 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 10:59:14.589  INFO 8776 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:59:18.138  INFO 8776 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 10:59:18.159  INFO 8776 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 10:59:18.932  INFO 8776 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 10:59:19.211  WARN 8776 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 10:59:19.477  INFO 8776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:59:19.877  INFO 8776 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 8.162 seconds (JVM running for 9.392)
+2023-12-06 10:59:57.785  INFO 8776 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 10:59:57.786  INFO 8776 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 10:59:57.787  INFO 8776 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 10:59:57.793  INFO 8776 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 11:00:43.519  INFO 19940 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 19940 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 11:00:43.521  INFO 19940 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 11:00:44.138  INFO 19940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 11:00:44.168  INFO 19940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2023-12-06 11:00:44.557  INFO 19940 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 11:00:44.836  INFO 19940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 11:00:45.193  INFO 19940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 11:00:45.261  INFO 19940 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 11:00:45.351  INFO 19940 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 11:00:45.536  INFO 19940 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 11:00:45.675  INFO 19940 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 11:00:46.094  INFO 19940 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 11:00:46.100  INFO 19940 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 11:00:46.396  INFO 19940 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 11:00:46.427  INFO 19940 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 11:00:47.298  INFO 19940 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 11:00:47.581  WARN 19940 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 11:00:47.836  INFO 19940 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 11:00:48.233  INFO 19940 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 4.973 seconds (JVM running for 6.781)
+2023-12-06 11:01:00.134  INFO 19940 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 11:01:04.994  INFO 19940 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 11:01:04.995  INFO 19940 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 11:01:04.997  INFO 19940 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 11:01:05.008  INFO 19940 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 11:06:00.933  INFO 2160 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 2160 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 11:06:00.935  INFO 2160 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 11:06:01.489  INFO 2160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 11:06:01.513  INFO 2160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2023-12-06 11:06:01.848  INFO 2160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 11:06:02.114  INFO 2160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 11:06:02.532  INFO 2160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 11:06:02.593  INFO 2160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 11:06:02.680  INFO 2160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 11:06:02.842  INFO 2160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 11:06:02.978  INFO 2160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 11:06:03.503  INFO 2160 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 11:06:03.510  INFO 2160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 11:06:03.775  INFO 2160 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 11:06:03.822  INFO 2160 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 11:06:04.677  INFO 2160 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 11:06:04.981  WARN 2160 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 11:06:05.377  INFO 2160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 11:06:06.076  INFO 2160 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 5.388 seconds (JVM running for 6.553)
+2023-12-06 11:06:21.071  INFO 2160 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 11:06:28.310  INFO 2160 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 11:06:28.311  INFO 2160 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 11:06:28.313  INFO 2160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 11:06:28.323  INFO 2160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 11:07:53.160  INFO 20088 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Starting SpotifyLaunchSteps on LAPTOP-OSC8EHJH with PID 20088 (started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 11:07:53.161  INFO 20088 --- [main] com.test.springbdd.SpotifyLaunchSteps    : No active profile set, falling back to default profiles: default
+2023-12-06 11:07:53.804  INFO 20088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 11:07:53.835  INFO 20088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2023-12-06 11:07:54.279  INFO 20088 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 11:07:54.576  INFO 20088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 11:07:55.040  INFO 20088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 11:07:55.123  INFO 20088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 11:07:55.264  INFO 20088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 11:07:55.420  INFO 20088 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 11:07:55.528  INFO 20088 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 11:07:56.053  INFO 20088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 11:07:56.058  INFO 20088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 11:07:56.324  INFO 20088 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 11:07:56.353  INFO 20088 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 11:07:57.196  INFO 20088 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 11:07:57.535  WARN 20088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 11:07:57.803  INFO 20088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 11:07:58.204  INFO 20088 --- [main] com.test.springbdd.SpotifyLaunchSteps    : Started SpotifyLaunchSteps in 5.328 seconds (JVM running for 6.53)
+2023-12-06 11:08:14.810  INFO 20088 --- [main] com.test.springbdd.CommonSteps           : Logger
+2023-12-06 11:08:18.886  INFO 20088 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-12-06 11:08:18.887  INFO 20088 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 11:08:18.889  INFO 20088 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06 11:08:18.899  INFO 20088 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06 11:18:36.355  INFO 21184 --- [main] com.test.springbdd.SpringBddApplication  : Starting SpringBddApplication on LAPTOP-OSC8EHJH with PID 21184 (C:\Users\Thilaga\eclipse-workspace\spring-bdd\target\classes started by Thilaga in C:\Users\Thilaga\eclipse-workspace\spring-bdd)
+2023-12-06 11:18:36.358  INFO 21184 --- [main] com.test.springbdd.SpringBddApplication  : No active profile set, falling back to default profiles: default
+2023-12-06 11:18:36.904  INFO 21184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-06 11:18:36.925  INFO 21184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2023-12-06 11:18:37.170  INFO 21184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-06 11:18:37.552  INFO 21184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-12-06 11:18:37.563  INFO 21184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-06 11:18:37.563  INFO 21184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2023-12-06 11:18:37.671  INFO 21184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-06 11:18:37.671  INFO 21184 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1266 ms
+2023-12-06 11:18:37.809  INFO 21184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-06 11:18:38.131  INFO 21184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-06 11:18:38.177  INFO 21184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-06 11:18:38.258  INFO 21184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2023-12-06 11:18:38.422  INFO 21184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-12-06 11:18:38.540  INFO 21184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-06 11:18:39.047  INFO 21184 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-06 11:18:39.054  INFO 21184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06 11:18:39.337  INFO 21184 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-12-06 11:18:39.369  INFO 21184 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Thilaga\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+2023-12-06 11:18:40.310  INFO 21184 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2023-12-06 11:18:40.385  WARN 21184 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-06 11:18:40.509  INFO 21184 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-06 11:18:40.741  INFO 21184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-12-06 11:18:40.742  INFO 21184 --- [main] com.test.springbdd.SpringBddApplication  : Started SpringBddApplication in 4.798 seconds (JVM running for 5.246)
