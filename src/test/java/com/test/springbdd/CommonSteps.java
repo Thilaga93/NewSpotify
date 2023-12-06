@@ -13,9 +13,7 @@ import com.test.springbdd.config.InterceptableSceanario;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 public class CommonSteps{
 
 	@Autowired
@@ -40,7 +38,7 @@ public class CommonSteps{
 
 		cmp.clickonaccount(link);
 		takescreenshot.takescreeshot();
-		log.info("Logger");
+		//log.info("Logger");
 
 
 	}	
