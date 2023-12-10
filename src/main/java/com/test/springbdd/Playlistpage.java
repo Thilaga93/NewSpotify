@@ -3,13 +3,10 @@ package com.test.springbdd;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 

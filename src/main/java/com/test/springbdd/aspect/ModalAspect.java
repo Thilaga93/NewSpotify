@@ -1,8 +1,6 @@
 package com.test.springbdd.aspect;
 
 
-import javax.annotation.PostConstruct;
-
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;

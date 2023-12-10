@@ -1,13 +1,7 @@
 package com.test.springbdd;
 
-import java.util.List;
-
-import javax.annotation.PostConstruct;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 

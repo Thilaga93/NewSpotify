@@ -63,7 +63,7 @@ public class CommonSteps{
 	@Then("display message")
 	public void display()
 	{
-		Spotify obj=new Spotify("Marana Mass","Anirudh","SUPERHIT");
+		Spotify obj=new Spotify("Aaluma Doluma","Anirudh","SUPERHIT");
 				db.save(obj);
 		System.out.println(obj);
 		System.out.println("Success");

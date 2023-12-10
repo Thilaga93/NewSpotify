@@ -2,8 +2,6 @@ package com.test.springbdd;
 
 import org.junit.Assert;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
@@ -39,7 +37,7 @@ public class SpotifyLaunchSteps extends Base{
 		scenario.write("Home Page loaded");
 		System.out.println("The status is "+scenario.getStatus());
 		takescreenshot.takescreeshot();
-		
+			
 		
 
 	}
