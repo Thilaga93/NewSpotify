@@ -68,7 +68,7 @@ public class WebDriverConfig {
 	public WebDriverWait getwait() throws MalformedURLException
 	{	
 
-		return new WebDriverWait(getdriver(),30);
+		return new WebDriverWait(getdriver3(),30);
 	}
 
 
